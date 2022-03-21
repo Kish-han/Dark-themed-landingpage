@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.icon{
+    @apply  w-[50%] md:w-5/6 text-center mx-auto 
+}
+
+.h1{
+    @apply font-[Raleway] font-bold my-3
+}
+
+.p{
+    @apply  font-sans text-[14px] ;
+}
+
+.rcard{
+    @apply w-[25%] md:w-[90%] md:mx-auto md:mb-8 h-[10em] shadow-lg shadow-cyan-500/50 px-5 py-4 bg-[#1c2431] z-[1];
+}
+
+.button:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+@tailwind utilities;
+

@@ -1,0 +1,27 @@
+{
+  "name": "dark-themed-landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kish-han/Dark-themed-landingpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kish-han/Dark-themed-landingpage/issues"
+  },
+  "homepage": "https://github.com/Kish-han/Dark-themed-landingpage#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "vite": "^2.8.6"
+  }
+}

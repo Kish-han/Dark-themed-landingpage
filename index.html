@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<!-- FONT STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+
+<body class="bg-[#1c2431] text-white  pt-8 ">
+    <nav class="flex justify-between md:items-center md:space-x-1 px-10 md:px-4 text-[#aaadab] ">
+        <div class="logo md:w-[30%]">
+            <img src="/images/logo.svg" alt="">
+        </div>
+        <div class="links w-[20%] md:w-[55%]">
+            <ul class="flex justify-between md:justify-evenly md:text-xs">
+                <li class="hover:text-white cursor-pointer te hover:underline-offset-1 hover:underline decoration-white">Features</li>
+                <li class="hover:text-white cursor-pointer te hover:underline-offset-1 hover:underline decoration-white">Team</li>
+                <li class="hover:text-white cursor-pointer te hover:underline-offset-1 hover:underline decoration-white">Sign In</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-wrapper relative mt-8 text-center">
+        <img class="w-2/5 md:w-5/6 md:px-8 mx-auto" src="/images/illustration-intro.png" alt="">
+        <img class=" hidden md:block md:absolute top-36 w-full -z-10 " src="/images/bg-curvy-mobile.svg" alt="">
+        <h1 class="text-3xl md:text-2xl font-['Raleway'] font-bold  w-[40%] md:w-5/6 mx-auto md:mt-12">All your files in one secure location, accessible anywhere.</h1>
+        <p class="mt-8 font-['Open Sans'] font-normal w-[30%] md:w-5/6 mx-auto">Fylo stores all your most important files in one secure location. Access them wherever 
+            you need, share and collaborate with friends family, and co-workers.</p>
+        <button class="button w-48 rounded-3xl text-sm mt-8 h-10 bg-gradient-to-r from-[#65e2d9] to-[#339ecc] font-bold text-[Raleway]">Get Started</button>
+    </div>
+    <div class="mobilepatch hidden md:block absolute bg-[#181f2a] w-full h-[40rem] top-[32rem] -z-10">
+    </div>
+    <img class="w-full absolute top-[35em] -z-10 md:hidden" src="/images/bg-curvy-desktop.svg" alt="">
+    <div class="main  bg-[#181f2a] mt-48 md:mt-32">
+        <div class="icon-wrapper mt-28 flex md:flex-col justify-center items-center ">
+            <div class="left-wrap w-1/2 md:w-full">
+                <div class="first icon mb-24">
+                    <img class="mx-auto" src="/images/icon-access-anywhere.svg" alt="">
+                    <h1 class="h1">Access your files, anywhere</h1>
+                    <p class="p">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere</p>
+                </div>
+                <div class="second icon">
+                    <img class="mx-auto" src="/images/icon-collaboration.svg" alt="">
+                    <h1 class="h1">Real-time collaboration</h1>
+                    <p class="p" >Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments requried.</p>
+                </div>
+            </div>
+            <div class="right-wrap w-1/2 md:w-full md:mt-[96px]">
+                <div class="third icon mb-24">
+                    <img class="mx-auto" src="/images/icon-security.svg" alt="">
+                    <h1 class="h1">Security you can trust</h1>
+                    <p class="p">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+                </div>
+                <div class="fourth icon">
+                    <img class="mx-auto" src="/images/icon-any-file.svg" alt="">
+                    <h1 class="h1">Store any type of file</h1>
+                    <p class="p"> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+                        file types to be securely stored and shared.</p>
+                </div>
+            </div>
+        </div>
+        <div class="stayproductive mt-24">
+            <div class="productive-wrapper w-full flex md:flex-col justify-center items-center">
+                <div class="left w-1/2 md:w-full ">
+                    <img class="w-[60%] md:w-5/6  ml-[15em] md:m-auto" src="/images/illustration-stay-productive.png" alt="">
+                </div>
+                <div class="right w-1/2 ml-12 md:m-auto md:w-5/6">
+                    <h1 class="text-3xl md:text-base font-['Raleway'] font-bold w-[40%] md:w-5/6 md:mt-8 mb-4">Stay productive, wherever you are</h1>
+                    <p class="p w-[60%] md:w-full mb-4">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+                        storage needs.</p>
+                    <p class="p w-[60%] md:w-full mb-4">Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+                        attachments required.</p>
+                    <p class=" inline-block cursor-pointer text-[#65e2d9] flex items-center underline decoration-[#65e2d9] underline-offset-4 hover:text-white hover:underline 
+                    hover:decoration-white ">
+                        See how Fylo works
+                        <img class="ml-2 pt-[5px]" src="/images/icon-arrow.svg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img class="relative md:w-8 left-[7rem] md:left-[2.5rem] bottom-[-7.5rem] md:bottom-[-7.3rem] z-[0] " src="/images/bg-quotes.png" alt="">
+        <div class="review w-full mt-28 flex md:flex-col justify-evenly px-9 ">
+            <div class="rcard">
+                <p class=" p text-[14px] md:text-[12px] mb-3">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                    become a well-oiled collaboration machine.
+                </p>
+                <div class="profile flex items-center">
+                    <img class="w-8 rounded-2xl mr-2" src="/images/profile-1.jpg" alt="">
+                    <div class="profile-details">
+                        <h1 class="text-sm font-semibold">Satish Patel</h1>
+                        <p class="text-[10px] font-extralight">Founder & CEO, Huddle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rcard">
+                <p class=" .p text-[14px] md:text-[12px]  mb-3">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                    become a well-oiled collaboration machine.
+                </p>
+                <div class="profile flex items-center">
+                    <img class="w-8 rounded-2xl mr-2" src="/images/profile-2.jpg" alt="">
+                    <div class="profile-details">
+                        <h1 class="text-sm font-semibold">Bruce McKenzie</h1>
+                        <p class="text-[10px] font-extralight">Founder & CEO, Huddle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rcard">
+                <p class=" .p text-[14px] md:text-[12px] mb-3">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                    become a well-oiled collaboration machine.
+                </p>
+                <div class="profile flex items-center">
+                    <img class="w-8 rounded-2xl mr-2" src="/images/profile-3.jpg" alt="">
+                    <div class="profile-details">
+                        <h1 class="text-sm font-semibold">Iva Boyd</h1>
+                        <p class="text-[10px] font-extralight">Founder & CEO, Huddle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer mt-[20em] bg-[#0b1523] text-sm">
+            <div class=" md:mt-[10rem
+            ]">
+                <div class="logo pt-[10em] md:pt-[8rem] px-11 mb-8 md:mb-12 md:mt-8">
+                    <img src="/images/logo.svg" alt="">
+                </div>
+                <div class="fotter-wrapper flex md:flex-col justify-evenly mt-4 h-72 md:h-[38rem] md:pl-8">
+                    <div class="address w-[30%] md:w-[90%] md:mb-4 flex items-start justify-start">
+                        <img class="mr-3 pt-1" src="/images/icon-location.svg" alt=""> 
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae neque iure iusto unde consequatur. Officia minima delectus optio eum inventore, rem commodi esse rerum expedita.
+                        </span>  
+                    </div>
+                    <div class="contact md:mb-12">
+                        <div class="img1 flex mb-3 md:mb-8">
+                            <img class="mr-2" src="/images/icon-phone.svg" alt="" > <span>Phone: +1-543-123-4567</span> 
+                        </div>
+                        <div class="img2 flex mt-3">
+                            <img class="mr-2" src="/images/icon-email.svg" alt=""> 
+                            <span>example@huddle.com</span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col space-y-3 md:mb-8">
+                        <li>About Us</li>
+                        <li>Jobs</li>
+                        <li>Press</li>
+                        <li>Blog</li>
+                    </ul>
+                    <ul class="flex flex-col space-y-3">
+                        <li>Contact Us</li>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                    </ul>
+                    <div class="social-icon space-x-4 md:mx-20 md:mt-8 md:py-6">
+                        <ion-icon size="large" name="logo-facebook"></ion-icon>
+                        <ion-icon size="large" name="logo-twitter"></ion-icon>
+                        <ion-icon size="large" name="logo-instagram"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="earlyaccess absolute  bg-[#1c2431] w-[50%] md:w-5/6 h-52 md:h-80 right-[25%] md:left-[8%]  bottom-[-110em] md:bottom-[-166em] rounded-lg shadow-lg shadow-cyan-500/50 text-center px-9 py-5 md:mb-14 md:p-0 ">
+            <h1 class="h1 text-2xl md:text-xl md:mt-8">Get early access today</h1>
+            <p class="p w-[80%] md:w-full md:px-4 mx-auto mb-4">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            <form class="" action="#">
+                <input class="w-[60%] md:w-5/6 md:h-11 md:mb-6 rounded-2xl md:rounded-3xl md:text-xs px-4 md:px-6 py-1 text-black" type="email"   required placeholder="email@example.com" name="" id="email">
+                <input class="button ml-4 md:ml-0 md:w-5/6 md:h-11 md:rounded-3xl font-semibold text-[Raleway] rounded-2xl px-4 py-1 bg-gradient-to-r from-[#65e2d9] to-[#339ecc]" type="button" value="Get Started for free">
+            </form>
+        </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kishan R</a>.
+    </p>
+  </footer>
+</body>
+</html>
